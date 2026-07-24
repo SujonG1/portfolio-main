@@ -3,7 +3,7 @@ import { useIntroAnimation } from "../../../../animations/animation-components/I
 
 const Social = () => {
 
-  const container = useRef<HTMLDivElement>(null)
+  const container = useRef<HTMLDivElement>(null!);
 
   useIntroAnimation(container)
 

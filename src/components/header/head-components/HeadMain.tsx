@@ -5,7 +5,7 @@ import { useIntroAnimation } from "../../../animations/animation-components/Intr
 
 const NavMain = () => {
 
-  const container = useRef<HTMLDivElement>(null);
+  const container = useRef<HTMLDivElement>(null!);
 
   useIntroAnimation(container)
 
