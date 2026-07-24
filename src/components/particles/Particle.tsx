@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 const ParticleBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -158,7 +158,7 @@ const ParticleBackground = () => {
         this.shootLength = 90 + Math.random() * 70;
       }
 
-      update(dt: number, now: number) {
+      update(dt: number) {
         if (this.isShooting) {
           this.x += this.shootVx * dt;
           this.y += this.shootVy * dt;
@@ -550,7 +550,7 @@ const ParticleBackground = () => {
       drawCursorCluster();
 
       for (const s of stars) {
-        s.update(dt, now);
+        s.update(dt);
         s.draw(now);
       }
 
