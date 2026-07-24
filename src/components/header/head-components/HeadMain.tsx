@@ -1,6 +1,7 @@
 import {useRef} from "react";
 import { Link } from "react-router-dom";
 import { useIntroAnimation } from "../../../animations/animation-components/Intro";
+import myImage from "../../../assets/images/Untitled.jpg"
 
 
 const NavMain = () => {
@@ -14,7 +15,7 @@ const NavMain = () => {
     ref={container}>
       <div className="flex justify-between text-4xl font-bold items-center bg-gradient-to-r from-sky-600 to-purple-800 bg-clip-text text-transparent opacity-100 nav-logo" >
         <img
-          src="./src/assets/images/Untitled.jpg"
+          src={myImage}
           className="w-10 h-10 object-cover rounded-full cursor-pointer"
         />
         <Link to="/" className="ml-5 pb-1 cursor-pointer font-anta">
