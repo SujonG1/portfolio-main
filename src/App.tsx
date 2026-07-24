@@ -3,13 +3,14 @@ import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
 import Footer from "./components/footer/Footer";
 import About from "./pages/about/About"
-
+import { Analytics } from "@vercel/analytics/next"
 import ParticleBackground from "./components/particles/Particle";
 
 
 const App = () => {
   return (
     <div className="relative min-h-screen w-full overflow-x-hidden ">
+      <Analytics />
       <ParticleBackground />
       <header>
         <Header />
